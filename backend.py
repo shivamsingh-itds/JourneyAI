@@ -56,7 +56,6 @@ llm = ChatGroq(
     api_key=GROQ_API_KEY
 )
 
-
 # =========================
 # State
 # =========================
@@ -219,8 +218,6 @@ checkpointer = PostgresSaver(_conn)
 checkpointer.setup()
 
 travel_graph = graph.compile(checkpointer=checkpointer)
-
-
 
 # =========================
 # Function for FastAPI
