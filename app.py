@@ -91,7 +91,6 @@ async def travel_planner(request_data: TravelRequest):
         )
 
 
-
 @app.get("/health")
 async def health_check():
     return {
@@ -103,8 +102,6 @@ async def health_check():
 @app.get("/favicon.ico")
 async def favicon():
     return JSONResponse(content={})
-
-
 
 if __name__ == "__main__":
     uvicorn.run(
